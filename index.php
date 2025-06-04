@@ -31,7 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Bukowski Forum – Connexion</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="/bukowski/assets/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
