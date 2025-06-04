@@ -2,24 +2,26 @@ body {
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     background-color: #0d0d1a;
-    background-image: url('../assets/jazz.png');
+    background-image: url('jazz.png'); /* doit être dans le dossier assets */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     color: #f8f8f8;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/* Formulaire de login */
 .login-box {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 2rem 3rem;
     border-radius: 15px;
     box-shadow: 0 0 20px #00ffe7;
     text-align: center;
+    margin-top: 10vh;
 }
 
 .login-box h1 {
@@ -52,4 +54,45 @@ body {
 .error {
     color: #ff4f4f;
     margin-top: 1rem;
+}
+
+/* Barre en haut (logout + nom) */
+.top-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ccc;
+}
+
+.logout-link {
+    margin-left: 20px;
+    color: #ff4f4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenu principal (listing + détail) */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 15px #00ffe7;
+    margin-top: 6rem;
+}
+
+/* Liste des sujets */
+.topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-list li {
+    margin-bottom: 1.5rem;
+}
+
+.topic-list a {
+    color: #00ffe7;
+    text-decoration: underline;
 }
