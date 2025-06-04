@@ -37,8 +37,6 @@ $topics = $stmt->fetchAll();
 
     <div class="content-box">
         <h1>📜 Liste des sujets</h1>
-		<a href="ajouter_sujet.php" class="btn">➕ Nouveau sujet</a>
-
 
         <?php if (count($topics) > 0): ?>
             <ul class="topic-list">

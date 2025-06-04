@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 if (!isset($_SESSION['user'])) {
     header("Location: index.php");
     exit();
@@ -38,7 +34,7 @@ if (!$topic) {
 <head>
     <meta charset="UTF-8">
     <title>Détail du sujet</title>
-	<link rel="stylesheet" href="/bukowski/assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
     <div class="top-bar">

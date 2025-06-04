@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 if (!isset($_SESSION['user'])) {
     header("Location: index.php");
     exit();
@@ -37,8 +33,6 @@ $topics = $stmt->fetchAll();
 
     <div class="content-box">
         <h1>📜 Liste des sujets</h1>
-		<a href="ajouter_sujet.php" class="btn">➕ Nouveau sujet</a>
-
 
         <?php if (count($topics) > 0): ?>
             <ul class="topic-list">
